@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amirhm — Pro ChatGPT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="nav"></div>
+
+  <main class="container" style="padding-top:1rem">
+    <h1 class="terminal-prefix" style="margin-bottom:0.8rem">Pro ChatGPT</h1>
+    <p style="color:#666;font-size:0.85rem;margin-bottom:1rem">
+      Simulated chat · no real API · offline demo
+    </p>
+
+    <div class="chat-container">
+      <div id="chat-messages" class="chat-messages"></div>
+      <form id="chat-form" class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" maxlength="500">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    Amirhm · cyberpunk personal site · demo only
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('nav').innerHTML = renderNavbar('chatgpt.html');
+    initChat();
+  </script>
+</body>
+</html>

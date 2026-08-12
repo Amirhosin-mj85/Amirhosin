@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amirhm — Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="nav"></div>
+
+  <main class="container">
+    <h1 class="terminal-prefix">Admin Panel</h1>
+    <p style="color:#666;margin-bottom:1.5rem;font-size:0.9rem">
+      Full control over posts and users. Demo only — data lives in your browser.
+    </p>
+
+    <section class="mb-1">
+      <h2>All Posts</h2>
+      <div id="admin-posts"></div>
+    </section>
+
+    <section class="mt-1">
+      <h2>Users</h2>
+      <div id="admin-users"></div>
+    </section>
+  </main>
+
+  <footer>
+    Amirhm · cyberpunk personal site · demo only
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    document.getElementById('nav').innerHTML = renderNavbar('admin.html');
+    initAdmin();
+  </script>
+</body>
+</html>
